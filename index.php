@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe</title>
     <link href="style.css" rel="stylesheet">
+    <link href="style_d.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 </head>
-<body style="margin-top:220px">
-    <header>
 
-       <img src= "./resources/img/cafe-logo.png"  width="150" height="150" alt="img">
+<body>
 
-        <?php
-       echo "<h3><em>Cafetail</em><h3>";
-        ?>
+    <div id="navbar">
+        <div style="width: 50%; float:left">
+            <img src= "./resources/img/cafe-logo.png"  width="100" height="100" alt="img">
+        </div>
+        <div class='topnav-right'>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#speciality">Speciality</a></li>
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#review">Review</a></li>
+                </ul>
+            </nav>    
+        </div> 
+    </div>
 
-      <nav class="nav">
-          <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#Menu">Menu</a></li>
-              <li><a href="#speciality">Speciality</a></li>
-              <li><a href="#order">Order</a></li>
-              <li><a href="#review">Review</a></li>
-          </ul>
-      </nav>
-       
-    </header>
+ 
 <section class="container1">
         
     <div class="split-left-img" >
