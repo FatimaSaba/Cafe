@@ -1,6 +1,6 @@
 header{
     font-family: "notino", sans-serif;
-    margine: 0; 
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     outline: none;
@@ -19,24 +19,22 @@ header{
     justify-content: space-between;
     background-color: #fff;
     font-family: "notino", sans-serif;
-    margine: 0; 
+    margin: 0; 
     padding: 0.3rem 2%;
     box-shadow:0 .3rem 2rem;
     
 }
-img{
 
-}
 
 .nav{
-style:none;
-margine:none;
-padding:none;
-
+  margin:none;
+  padding:none;
 }
+
 li{
     display: inline; 
 }
+
 .split-left-img{
     height: 100%;
     width: 50%;
@@ -70,17 +68,10 @@ li{
   /* If you want the content centered horizontally and vertically */
   
     
-  }
   
   /* Style the image inside the centered container, if needed */
   .centered img {
     width: 150px;
     border-radius: 50%;
   }
-
-
-
-
-
-
 
