@@ -1,86 +1,96 @@
+
 header{
-    font-family: "notino", sans-serif;
-    margine: 0; 
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: all,2s,linear;
+  font-family: "notino", sans-serif;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all,2s,linear;
 }
 body{
-    background:#f7f7f7;
+  background:#f7f7f7;
 }
 header{
-    position: fixed;
-    top: 0; left: 0; right:0;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    background-color: #fff;
-    font-family: "notino", sans-serif;
-    margine: 0; 
-    padding: 0.3rem 2%;
-    box-shadow:0 .3rem 2rem;
-    
+  position: fixed;
+  top: 0; left: 0; right:0;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #fff;
+  font-family: "notino", sans-serif;
+  margin: 0; 
+  padding: 0.3rem 2%;
+  box-shadow:0 .3rem 2rem;
+  
 }
-img{
 
-}
 
 .nav{
-style:none;
-margine:none;
+margin:none;
 padding:none;
-
 }
+
 li{
-    display: inline; 
+  display: inline; 
 }
+
 .split-left-img{
-    height: 100%;
-    width: 50%;
-    z-index: 1;
-    top: 60%;
-    overflow-x: hidden;
-    padding-top: 100px;
-    left: 0;
-    top: 50%;
-    left: 50%;
-   
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  top: 60%;
+  overflow-x: hidden;
+  padding-top: 100px;
+  left: 0;
+  top: 50%;
+  left: 50%;
+ 
+}
+
+/* Control the left side */
+
+/* Control the right side */
+.split-right-para{
+  height: 60%;
+  width: 50%;
+  top: 50%;
+  bottom: 45%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  right:50%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  
+}
+
+.centered{
+  position: absolute;
+  top:100%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-family: 'Gabriela';
+  font-size:40px;
   }
-  
-  /* Control the left side */
-  
-  /* Control the right side */
-  .split-right-para{
-    height: 60%;
-    width: 50%;
-    top: 50%;
-    bottom: 45%;
-    overflow-x: hidden;
-    padding-top: 20px;
-    right:50%;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    
-  }
-  
-  /* If you want the content centered horizontally and vertically */
-  
-    
-  }
-  
-  /* Style the image inside the centered container, if needed */
-  .centered img {
-    width: 150px;
-    border-radius: 50%;
+  .centered.p{
+  position: absolute;
+  top:100%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-family: 'Gabriela';
+  font-size:40px;
   }
 
+/* If you want the content centered horizontally and vertically */
 
+  
 
-
-
-
-
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
