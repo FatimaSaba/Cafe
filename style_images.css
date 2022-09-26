@@ -1,0 +1,15 @@
+
+.box-container{
+    float: left;
+    padding: 10px;
+    width: 30%;
+}
+ 
+div.box img{
+    width: 350px;
+    height: 350px;
+}
+
+.empty{
+    height: 500px;
+}

@@ -7,29 +7,31 @@
     <title>Cafe</title>
     <link href="style.css" rel="stylesheet">    
     <link href="style_header.css" rel="stylesheet">    
+    <link href="style_images.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
-
+    
 </head>
 
 
 <body>
-    <div id="navbar">
-        <div style="width: 50%; float:left">
-            <img src= "./resources/img/cafe-logo.png"  width="100" height="100" alt="img">
-        </div>
-        <div class='topnav-right'>
-            <nav class="nav">
-                <ul><
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#Menu">Menu</a></li>
-                    <li><a href="#speciality">Speciality</a></li>
-                    <li><a href="#order">Order</a></li>
-                    <li><a href="#review">Review</a></li>
-                </ul>
-            </nav>    
-        </div> 
+
+<div id="navbar">
+    <div style="width: 50%; float:left">
+        <img src= "./resources/img/cafe-logo.png"  width="100" height="100" alt="img">
     </div>
+    <div class='topnav-right'>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#speciality">Speciality</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#review">Review</a></li>
+            </ul>
+        </nav>    
+    </div> 
+</div>
 
     
 <section class="container1">        
@@ -53,137 +55,20 @@
     </div>
 </section>
 
-
 <section class="container2">
     <div class="Menu" id="Menu">
         <h1><span>Menu</span></h1>
     </div>
 
-    <!-- Flat white -->
-    <div class="box-container">
-        <div class="box">
-            <span class="price">$7</span>
-            <img src="./resources/img/imagesf.jpeg" alt="flat white" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Flat White</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
+    <div class="row">
+        <!-- Flat white -->
+        <div class="box-container">
+            <div class="box">
+                <span class="price">$7</span>
+                <img src="./resources/img/imagesf.jpeg" alt="flat white" >
             </div>
-            <a href="#" class="btn">order now</a>
-        </div>
-    </div>
-
-    <!-- Macchiato -->
-    <div class="box-container">
-        <div class="box">
-            <span class="price">$8</span>
-            <img src="./resources/img/Macchiato.jpg" alt="Macchiato" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Macchiato</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-            </div>
-            <a href="#" class="btn">order now</a>
-        </div>
-    </div>
-    
-    <!-- Cafe mocha -->
-    <div class="box-container">
-        <div class="box">
-            <span class="price">$5</span>
-            <img src="./resources/img/cafe mocha.jpg" alt="cafe mocha" width="400" height="400">
-        </div>
-
-        <div class="text">
-            <h3>Cafe Mocha</h3>   
-                <div class="stars">
-                    <i class="fas fa star"></i>
-                    <i class="fas fa star"></i>
-                    <i class="fas fa star"></i>
-                    <i class="fas fa star"></i>
-                    <i class="fas fa star"></i>
-                </div>
-            <a href="#" class="btn">order now</a>
-        </div>
-    </div>
-
-    <!-- Espresso -->
-    <div class="box-container"> 
-        <div class="box">
-            <span class="price">$4</span>
-            <img src="./resources/img/espresso.webp" alt="Espresso" width="400" height="400">
-        </div>
-
-        <div class="text">
-            <h3>Espresso</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-            </div>
-            <a href="#" class="btn">order now</a> 
-        </div>
-    </div>
-
-
-    <!-- Cappucino -->
-    <div class="box-container">
-        <div class="box">
-            <span class="price">$7</span>
-            <img src="./resources/img/imagesi.jpeg" alt="Capppuccino" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Capppuccino</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-            </div>
-            <a href="#" class="btn">order now</a>
-        </div>
-    </div>    
-
-    <!-- Americano -->
-    <div class="box-container">
-        <div class="box">
-            <span class="price">$4</span>
-            <img src="./resources/img/americano.jpeg" alt="americano" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Americano</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-            </div>
-            <a href="#" class="btn">order now</a>
-        </div>
-    </div>
-
-    <!-- Irish Coffee -->
-    <div class="box-container">
-        <div class="box">
-            <span class="price">$8</span>
-            <img src="./resources/img/irish.jpg" alt="Irish Coffee" width="400" height="400">
-        </div>
             <div class="text">
-                <h3>Irish Coffee</h3>
+                <h3>Flat White</h3>
                 <div class="stars">
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
@@ -192,65 +77,201 @@
                     <i class="fas fa star"></i>
                 </div>
                 <a href="#" class="btn">order now</a>
+            </div>
+            <button onclick="addItem('flatWhite')"> + </button>
+            <button onclick="subItem('flatWhite')"> - </button>
+             </div>
+
+        <!-- Macchiato -->
+        <div class="box-container">
+            <div class="box">
+                <span class="price">$8</span>
+                <img src="./resources/img/Macchiato.jpg" alt="Macchiato" >
+            </div>
+            <div class="text">
+                <h3>Macchiato</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('macchiato')"> + </button>
+                <button onclick="subItem('macchiato')"> - </button>
+            </div>
+        </div>
+        
+        <!-- Cafe mocha -->
+        <div class="box-container">
+            <div class="box">
+                <span class="price">$5</span>
+                <img src="./resources/img/cafe mocha.jpg" alt="cafe mocha" >
+            </div>
+            <div class="text">
+                <h3>Cafe Mocha</h3>   
+                    <div class="stars">
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                    </div>
+                    <button onclick="addItem('Cafe Mocha')"> + </button>
+                    <button onclick="subItem('Cafe Mocha')"> - </button>
+            </div>
         </div>
     </div>
 
-    <!-- Cold-Coffee -->
-    <div class="box-container">    
-        <div class="box">
-            <span class="price">$10</span>
-            <img src="./resources/img/coldcoffeewithicecream.jpg" alt="Cold-Coffee with Ice-cream" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Cold-Coffee with Ice-cream</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
+    <!-- Espresso -->
+    <div class="row">
+        <div class="box-container"> 
+            <div class="box">
+                <span class="price">$4</span>
+                <img src="./resources/img/espresso.webp" alt="Espresso" >
             </div>
-            <a href="#" class="btn">order now</a>
+
+            <div class="text">
+                <h3>Espresso</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('Espresso')"> + </button>
+                <button onclick="subItem('Espresso')"> - </button>
+            </div>
+        </div>
+
+
+        <!-- Cappucino -->
+        <div class="box-container">
+            <div class="box">
+                <span class="price">$7</span>
+                <img src="./resources/img/imagesi.jpeg" alt="Capppuccino" >
+            </div>
+            <div class="text">
+                <h3>Capppuccino</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('Capppuccino')"> + </button>
+                <button onclick="subItem('Capppuccino')"> - </button>
+            </div>
+        </div>    
+
+        <!-- Americano -->
+        <div class="box-container">
+            <div class="box">
+                <span class="price">$4</span>
+                <img src="./resources/img/americano.jpeg" alt="americano" >
+            </div>
+            <div class="text">
+                <h3>Americano</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('Americano')"> + </button>
+                <button onclick="subItem('Americano')"> - </button>
+            </div>
         </div>
     </div>
+
+    <!-- Irish Coffee -->
+    <div class="row">
+        <div class="box-container">
+            <div class="box">
+                <span class="price">$8</span>
+                <img src="./resources/img/irish.jpg" alt="Irish Coffee" >
+            </div>
+                <div class="text">
+                    <h3>Irish Coffee</h3>
+                    <div class="stars">
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                        <i class="fas fa star"></i>
+                    </div>
+                    <button onclick="addItem('Irish Coffee')"> + </button>
+                    <button onclick="subItem('Irish Coffee')"> - </button>
+            </div>
+        </div>
+
+        <!-- Cold-Coffee -->
+        <div class="box-container">    
+            <div class="box">
+                <span class="price">$10</span>
+                <img src="./resources/img/coldcoffeewithicecream.jpg" alt="Cold-Coffee with Ice-cream" >
+            </div>
+            <div class="text">
+                <h3>Cold-Coffee with Ice-cream</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('ColdCoffeewithIceCream')"> + </button>
+                <button onclick="subItem('ColdCoffeewithIceCream')"> - </button>
+            </div>
+        </div>
+
+        <!-- Latte -->
+        <div class="box-container">    
+            <div class="box">
+                <span class="price">$8</span>
+                <img src="./resources/img/latte.jpg" alt="Latte" >
+            </div>
+            <div class="text">
+                <h3>Latte</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('Latte')"> + </button>
+                <button onclick="subItem('Latte')"> - </button>
+            </div>
+        </div>
+    </div>      
 
     <!-- Latte -->
-    <div class="box-container">    
-        <div class="box">
-            <span class="price">$8</span>
-            <img src="./resources/img/latte.jpg" alt="Latte" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Latte</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
+    <div class="row">
+        <div class="box-container">   
+            <div class="box">
+                <span class="price">$10</span>
+                <img src="./resources/img/frappe.jpg" alt="Frappe" >
             </div>
-            <a href="#" class="btn">order now</a>
-        </div>
-    </div>
-
-    <!-- Latte -->
-    <div class="box-container">   
-        <div class="box">
-            <span class="price">$10</span>
-            <img src="./resources/img/frappe.jpg" alt="Frappe" width="400" height="400">
-        </div>
-        <div class="text">
-            <h3>Frappe</h3>
-            <div class="stars">
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
-                <i class="fas fa star"></i>
+            <div class="text">
+                <h3>Frappe</h3>
+                <div class="stars">
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                    <i class="fas fa star"></i>
+                </div>
+                <button onclick="addItem('Frappe')"> + </button>
+                <button onclick="subItem('Frappe')"> - </button>
             </div>
-            <a href="#" class="btn">order now</a>
         </div>
-    </div>
+        <div class="box-container empty"></div>
+        <div class="box-container empty"></div>
+    </div>  
 </section>
 
 <section class="container">
@@ -260,16 +281,16 @@
         </h2>
     </div>
 <div class="box">
-    <img src="./resources/img/imagesf.jpeg" alt="flat white" width="400" height="400"></div>
+    <img src="./resources/img/imagesf.jpeg" alt="flat white" ></div>
     <div class="text">
         <h3>Flat White</h3>
 
     <p> The flat white coffee is an espresso-based coffee drink accompanied with steamed milk and microfoam. This microfoam is made up of steamed milk which is gently infused with air. This results in silky, textured milk containing tiny air bubbles.</p>
-</div>
+    </div>
 </div>
 
 <div class="box">
-    <img src="./resources/img/cold-coffee-with-ice-cream-1.webp" alt="Cold-Coffee with Ice-cream" width="400" height="400"></div>
+    <img src="./resources/img/cold-coffee-with-ice-cream-1.webp" alt="Cold-Coffee with Ice-cream" ></div>
     <div class="text">
         <h3>Flat White</h3>
 
@@ -277,7 +298,7 @@
 </div>
 </div>
 <div class="box">
-    <img src="./resources/img/imagesi.jpeg" alt="Capppuccino" width="400" height="400"></div>
+    <img src="./resources/img/imagesi.jpeg" alt="Capppuccino" ></div>
     <div class="text">
         <h3>Capppuccino</h3>
 
@@ -285,7 +306,7 @@
 </div>
 </div>
 <div class="box">
-    <img src="./resources/img/imagesd.jpeg" alt="Espresso" width="400" height="400"></div>
+    <img src="./resources/img/imagesd.jpeg" alt="Espresso" ></div>
     <div class="text">
         <h3>Espresso</h3>
 
@@ -293,7 +314,7 @@
 </div>
 </div>
 <div class="box">
-    <img src="./resources/img/imagesa.jpeg" alt="Macchiato" width="400" height="400"></div>
+    <img src="./resources/img/imagesa.jpeg" alt="Macchiato" ></div>
     <div class="text">
         <h3>Macchiato</h3>
 
@@ -301,7 +322,7 @@
 </div>
 </div>
 <div class="box">
-    <img src="./resources/img/imagesj.jpeg" alt="Frappe" width="400" height="400"></div>
+    <img src="./resources/img/imagesj.jpeg" alt="Frappe" ></div>
     <div class="text">
         <h3>Frappe</h3>
 
@@ -309,7 +330,7 @@
 </div>
 </div>
 <div class="box">
-    <img src="./resources/img/Caramel-Macchiato-1.jpeg" alt= "Caramel Macchiato" width="400" height="400"></div>
+    <img src="./resources/img/Caramel-Macchiato-1.jpeg" alt= "Caramel Macchiato" ></div>
     <div class="text">
         <h3>Caramel Macchiato"</h3>
 
@@ -428,5 +449,7 @@
 
 
     <script src="script.js"></script>
+    <script src="script_items.js"></script>
+
 </body>
 </html>
