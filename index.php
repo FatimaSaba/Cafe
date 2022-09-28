@@ -26,14 +26,19 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#Menu">Menu</a></li>
                 <li><a href="#speciality">Speciality</a></li>
-                <li><a href="#order">Order</a></li>
                 <li><a href="#review">Review</a></li>
+                
+                
+                <li id='checkoutbutton' style='display:none' >
+                    <!--<button action="/action_payment.php"><a href="payment.php">Checkout</a></button>-->
+                    <button type="submit" action="/action_payment.php" form="formDrinks" value="Submit">Checkout</button>
+                </li>
+                
             </ul>
         </nav>    
     </div> 
 </div>
 
-    
 <section class="container1">        
     <div class="split-left-img" >
         <img src="./resources/img/home.webp" alt="coffee image" style="width:100%;" >
@@ -60,11 +65,21 @@
         <h1><span>Menu</span></h1>
     </div>
 
+
+
+    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="flatWhite" name="flatWhite"><br>
+        <input type="text" id="macchiato" name="macchiato"><br>
+
+        
+    </form> 
+        
+
+
     <div class="row">
         <!-- Flat white -->
         <div class="box-container">
             <div class="box">
-                <span class="price">$7</span>
                 <img src="./resources/img/imagesf.jpeg" alt="flat white" >
             </div>
             <div class="text">
@@ -76,16 +91,17 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <a href="#" class="btn">order now</a>
             </div>
             <button onclick="addItem('flatWhite')"> + </button>
+            <span id="flatWhite_display">0</span>
+            <span class="price">Add $7</span>
             <button onclick="subItem('flatWhite')"> - </button>
              </div>
 
         <!-- Macchiato -->
+        
         <div class="box-container">
             <div class="box">
-                <span class="price">$8</span>
                 <img src="./resources/img/Macchiato.jpg" alt="Macchiato" >
             </div>
             <div class="text">
@@ -98,14 +114,20 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('macchiato')"> + </button>
+                <span id="macchiato_display">0</span>
+                <span class="price">Add $8</span>
                 <button onclick="subItem('macchiato')"> - </button>
             </div>
         </div>
         
         <!-- Cafe mocha -->
+
+        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="cafe mocha" name="cafe mocha"><br>
+    </form> 
+        
         <div class="box-container">
             <div class="box">
-                <span class="price">$5</span>
                 <img src="./resources/img/cafe mocha.jpg" alt="cafe mocha" >
             </div>
             <div class="text">
@@ -118,16 +140,23 @@
                         <i class="fas fa star"></i>
                     </div>
                     <button onclick="addItem('Cafe Mocha')"> + </button>
+                    <span id="Cafe Mocha_display">0</span>
+                    <span class="price">Add $5</span>
                     <button onclick="subItem('Cafe Mocha')"> - </button>
             </div>
         </div>
     </div>
 
     <!-- Espresso -->
+
+    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="Espresso" name="Espresso"><br>
+    </form> 
+        
+
     <div class="row">
         <div class="box-container"> 
             <div class="box">
-                <span class="price">$4</span>
                 <img src="./resources/img/espresso.webp" alt="Espresso" >
             </div>
 
@@ -141,15 +170,20 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('Espresso')"> + </button>
+                <span id="Espresso_display">0</span>
+                <span class="price">Add $4</span>
                 <button onclick="subItem('Espresso')"> - </button>
             </div>
         </div>
 
 
         <!-- Cappucino -->
+        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="Capppuccino" name="Capppuccino"><br>
+    </form> 
+        
         <div class="box-container">
             <div class="box">
-                <span class="price">$7</span>
                 <img src="./resources/img/imagesi.jpeg" alt="Capppuccino" >
             </div>
             <div class="text">
@@ -162,14 +196,20 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('Capppuccino')"> + </button>
+                <span id="Capppuccino_display">0</span>
+                <span class="price">Add $7</span>
                 <button onclick="subItem('Capppuccino')"> - </button>
             </div>
         </div>    
 
         <!-- Americano -->
+        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="Americano" name="Americano"><br>
+    </form> 
+        
+
         <div class="box-container">
             <div class="box">
-                <span class="price">$4</span>
                 <img src="./resources/img/americano.jpeg" alt="americano" >
             </div>
             <div class="text">
@@ -181,17 +221,23 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <button onclick="addItem('Americano')"> + </button>
-                <button onclick="subItem('Americano')"> - </button>
+                <button onclick="addItem('americano')"> + </button>
+                <span id="Americano_display">0</span>
+                <span class="price">Add $4</span>
+                <button onclick="subItem('americano')"> - </button>
             </div>
         </div>
     </div>
 
     <!-- Irish Coffee -->
+
+    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="Irish Coffee" name="Irish Coffee"><br>
+    </form> 
+        
     <div class="row">
         <div class="box-container">
             <div class="box">
-                <span class="price">$8</span>
                 <img src="./resources/img/irish.jpg" alt="Irish Coffee" >
             </div>
                 <div class="text">
@@ -204,14 +250,20 @@
                         <i class="fas fa star"></i>
                     </div>
                     <button onclick="addItem('Irish Coffee')"> + </button>
+                    <span id="IrishCoffee_display">0</span>
+                    <span class="price">Add $8</span>
                     <button onclick="subItem('Irish Coffee')"> - </button>
             </div>
         </div>
 
         <!-- Cold-Coffee -->
+        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="ColdCoffeewithIceCream" name="ColdCoffeewithIceCream"><br>
+    </form> 
+        
+
         <div class="box-container">    
             <div class="box">
-                <span class="price">$10</span>
                 <img src="./resources/img/coldcoffeewithicecream.jpg" alt="Cold-Coffee with Ice-cream" >
             </div>
             <div class="text">
@@ -224,14 +276,20 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('ColdCoffeewithIceCream')"> + </button>
+                <span id="ColdCoffeewithIceCream_display">0</span>
+                <span class="price">Add $10</span>
                 <button onclick="subItem('ColdCoffeewithIceCream')"> - </button>
             </div>
         </div>
 
         <!-- Latte -->
+        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="Latte" name="Latte"><br>
+    </form> 
+        
+
         <div class="box-container">    
             <div class="box">
-                <span class="price">$8</span>
                 <img src="./resources/img/latte.jpg" alt="Latte" >
             </div>
             <div class="text">
@@ -244,16 +302,22 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('Latte')"> + </button>
+                <span id="Latte_display">0</span>
+                <span class="price">Add $8</span>
                 <button onclick="subItem('Latte')"> - </button>
             </div>
         </div>
     </div>      
 
     <!-- Latte -->
+    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+        <input type="text" id="Frappe" name="Frappe"><br>
+    </form> 
+        
+
     <div class="row">
         <div class="box-container">   
             <div class="box">
-                <span class="price">$10</span>
                 <img src="./resources/img/frappe.jpg" alt="Frappe" >
             </div>
             <div class="text">
@@ -266,6 +330,8 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('Frappe')"> + </button>
+                <span id="Frappe_display">0</span>
+                <span class="price">Add $8</span>
                 <button onclick="subItem('Frappe')"> - </button>
             </div>
         </div>
@@ -412,41 +478,19 @@
      
     </div>
 </div> 
-
 <section class="container">
-<div class="order" id="order">
-    <h2 class="heading"><span>Order</span></h2>
-</div>
-<div>
-    <form action="action_page.php" method="post">
-
-
-    <section class="container">
         <div class ="footer" id="footer">
             <ul>
-                <li><a href= "#" >Facebook</a>
-                <a href= "#" >instagram</a>
-                <a href= "#" >twitter</a>
-            </li>
+                <li>
+                    <a href= "#" >Facebook</a>
+                    <a href= "#" >instagram</a>
+                    <a href= "#" >twitter</a>
+                </li>
+           </ul>
+
             <p>All right reserved. Designed By <a href="#">Saba Fatima</p>
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-    
-
-
-
-
+        </div>  
+</section>
 
     <script src="script.js"></script>
     <script src="script_items.js"></script>
