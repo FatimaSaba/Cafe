@@ -3,13 +3,13 @@ var dict = {
   flatWhite: 0,
   macchiato: 0,
   cafemocha: 0,
-  Espresso: 0,
-  Capppuccino: 0,
+  espresso: 0,
+  capppuccino: 0,
   americano: 0,
-  IrishCoffee: 0,
-  ColdCoffeewithIceCream: 0,
-  Latte: 0,
-  Frappe: 0,
+  irishCoffee: 0,
+  coldCoffeeWithIceCream: 0,
+  latte: 0,
+  frappe: 0,
 };
   
  
@@ -18,13 +18,13 @@ function checkIfThereIsItems(){
     if(dict.flatWhite != 0 || 
         dict.macchiato != 0 ||
         dict.cafemocha != 0 ||
-        dict.Espresso != 0 ||
-        dict.Capppuccino != 0 ||
+        dict.espresso != 0 ||
+        dict.capppuccino != 0 ||
         dict.americano != 0 ||
-        dict.IrishCoffee != 0 ||
-        dict.ColdCoffeewithIceCream != 0 ||
-        dict.Latte != 0 ||
-        dict.Frappe != 0 )
+        dict.irishCoffee != 0 ||
+        dict.coldCoffeeWithIceCream != 0 ||
+        dict.latte != 0 ||
+        dict.frappe != 0 )
     {
         return true;
     }
@@ -50,19 +50,18 @@ function changeValueForItem(item,value){
 
 function addItem (item)
 {
-    dict[item] = dict[item] + 1;
-    console.table(dict);
-    document.getElementById(`${item}_display`).innerHTML = dict[item];
-    changeValueForItem(item,dict[item]);
-    unhideOrHideElement("checkoutbutton",checkIfThereIsItems()); 
+    dict[item] = dict[item] + 1;//work add product 
+    document.getElementById(`${item}_display`).innerHTML = dict[item];// display on the screen
+    changeValueForItem(item,dict[item]); //change values
+    unhideOrHideElement("checkoutbutton",checkIfThereIsItems());  // work as hiddencheckout button when there is no products got selected
 }
-function subItem (item){
-    if(dict[item] == 0){
+function subItem (item){//function for minus value
+    if(dict[item] == 0){// if there is no products then it shows 0 or hide the chcekout button
         return;
-    }
+    }//
 
-    dict[item] = dict[item] - 1;
-    console.table(dict);
+    dict[item] = dict[item] - 1;//  work minus item
     document.getElementById(`${item}_display`).innerHTML = dict[item];
-    unhideOrHideElement("checkoutbutton",checkIfThereIsItems());
+    changeValueForItem(item,dict[item]); //display on the sceen each item
+    unhideOrHideElement("checkoutbutton",checkIfThereIsItems());//hide and unhide checkout button
 }

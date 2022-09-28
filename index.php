@@ -67,10 +67,17 @@
 
 
 
-    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
+    <form name='formDrinks' id="formDrinks" action="/payment.php" method="PoSt">
         <input type="text" id="flatWhite" name="flatWhite"><br>
         <input type="text" id="macchiato" name="macchiato"><br>
-
+        <input type="text" id="cafemocha" name="cafemocha"><br>
+        <input type="text" id="espresso" name="espresso"><br>
+        <input type="text" id="capppuccino" name="capppuccino"><br>
+        <input type="text" id="americano" name="americano"><br>
+        <input type="text" id="irishCoffee" name="irishCoffee"><br>
+        <input type="text" id="coldCoffeeWithIceCream" name="coldCoffeeWithIceCream"><br>
+        <input type="text" id="latte" name="latte"><br>
+        <input type="text" id="frappe" name="frappe"><br>
         
     </form> 
         
@@ -80,7 +87,7 @@
         <!-- Flat white -->
         <div class="box-container">
             <div class="box">
-                <img src="./resources/img/imagesf.jpeg" alt="flat white" >
+                <img src="./resources/img/imagesf.jpeg" alt="flatWhite" >
             </div>
             <div class="text">
                 <h3>Flat White</h3>
@@ -102,7 +109,7 @@
         
         <div class="box-container">
             <div class="box">
-                <img src="./resources/img/Macchiato.jpg" alt="Macchiato" >
+                <img src="./resources/img/Macchiato.jpg" alt="macchiato" >
             </div>
             <div class="text">
                 <h3>Macchiato</h3>
@@ -121,14 +128,10 @@
         </div>
         
         <!-- Cafe mocha -->
-
-        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="cafe mocha" name="cafe mocha"><br>
-    </form> 
-        
+     
         <div class="box-container">
             <div class="box">
-                <img src="./resources/img/cafe mocha.jpg" alt="cafe mocha" >
+                <img src="./resources/img/cafe mocha.jpg" alt="cafemocha" >
             </div>
             <div class="text">
                 <h3>Cafe Mocha</h3>   
@@ -139,25 +142,20 @@
                         <i class="fas fa star"></i>
                         <i class="fas fa star"></i>
                     </div>
-                    <button onclick="addItem('Cafe Mocha')"> + </button>
-                    <span id="Cafe Mocha_display">0</span>
+                    <button onclick="addItem('cafemocha')"> + </button>
+                    <span id="cafemocha_display">0</span>
                     <span class="price">Add $5</span>
-                    <button onclick="subItem('Cafe Mocha')"> - </button>
+                    <button onclick="subItem('cafemocha')"> - </button>
             </div>
         </div>
     </div>
 
     <!-- Espresso -->
-
-    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="Espresso" name="Espresso"><br>
-    </form> 
         
-
     <div class="row">
         <div class="box-container"> 
             <div class="box">
-                <img src="./resources/img/espresso.webp" alt="Espresso" >
+                <img src="./resources/img/espresso.webp" alt="espresso" >
             </div>
 
             <div class="text">
@@ -169,22 +167,19 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <button onclick="addItem('Espresso')"> + </button>
-                <span id="Espresso_display">0</span>
+                <button onclick="addItem('espresso')"> + </button>
+                <span id="espresso_display">0</span>
                 <span class="price">Add $4</span>
-                <button onclick="subItem('Espresso')"> - </button>
+                <button onclick="subItem('espresso')"> - </button>
             </div>
         </div>
 
 
         <!-- Cappucino -->
-        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="Capppuccino" name="Capppuccino"><br>
-    </form> 
         
         <div class="box-container">
             <div class="box">
-                <img src="./resources/img/imagesi.jpeg" alt="Capppuccino" >
+                <img src="./resources/img/imagesi.jpeg" alt="capppuccino" >
             </div>
             <div class="text">
                 <h3>Capppuccino</h3>
@@ -195,19 +190,15 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <button onclick="addItem('Capppuccino')"> + </button>
-                <span id="Capppuccino_display">0</span>
+                <button onclick="addItem('capppuccino')"> + </button>
+                <span id="capppuccino_display">0</span>
                 <span class="price">Add $7</span>
-                <button onclick="subItem('Capppuccino')"> - </button>
+                <button onclick="subItem('capppuccino')"> - </button>
             </div>
         </div>    
 
         <!-- Americano -->
-        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="Americano" name="Americano"><br>
-    </form> 
         
-
         <div class="box-container">
             <div class="box">
                 <img src="./resources/img/americano.jpeg" alt="americano" >
@@ -222,7 +213,7 @@
                     <i class="fas fa star"></i>
                 </div>
                 <button onclick="addItem('americano')"> + </button>
-                <span id="Americano_display">0</span>
+                <span id="americano_display">0</span>
                 <span class="price">Add $4</span>
                 <button onclick="subItem('americano')"> - </button>
             </div>
@@ -230,10 +221,6 @@
     </div>
 
     <!-- Irish Coffee -->
-
-    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="Irish Coffee" name="Irish Coffee"><br>
-    </form> 
         
     <div class="row">
         <div class="box-container">
@@ -249,22 +236,17 @@
                         <i class="fas fa star"></i>
                         <i class="fas fa star"></i>
                     </div>
-                    <button onclick="addItem('Irish Coffee')"> + </button>
-                    <span id="IrishCoffee_display">0</span>
+                    <button onclick="addItem('irishCoffee')"> + </button>
+                    <span id="irishCoffee_display">0</span>
                     <span class="price">Add $8</span>
-                    <button onclick="subItem('Irish Coffee')"> - </button>
+                    <button onclick="subItem('irishCoffee')"> - </button>
             </div>
         </div>
 
         <!-- Cold-Coffee -->
-        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="ColdCoffeewithIceCream" name="ColdCoffeewithIceCream"><br>
-    </form> 
-        
-
         <div class="box-container">    
             <div class="box">
-                <img src="./resources/img/coldcoffeewithicecream.jpg" alt="Cold-Coffee with Ice-cream" >
+                <img src="./resources/img/coldcoffeewithicecream.jpg" alt="coldCoffeeWithIceCream" >
             </div>
             <div class="text">
                 <h3>Cold-Coffee with Ice-cream</h3>
@@ -275,17 +257,14 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <button onclick="addItem('ColdCoffeewithIceCream')"> + </button>
-                <span id="ColdCoffeewithIceCream_display">0</span>
+                <button onclick="addItem('coldCoffeeWithIceCream')"> + </button>
+                <span id="coldCoffeeWithIceCream_display">0</span>
                 <span class="price">Add $10</span>
-                <button onclick="subItem('ColdCoffeewithIceCream')"> - </button>
+                <button onclick="subItem('coldCoffeeWithIceCream')"> - </button>
             </div>
         </div>
 
         <!-- Latte -->
-        <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="Latte" name="Latte"><br>
-    </form> 
         
 
         <div class="box-container">    
@@ -301,24 +280,20 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <button onclick="addItem('Latte')"> + </button>
-                <span id="Latte_display">0</span>
+                <button onclick="addItem('latte')"> + </button>
+                <span id="latte_display">0</span>
                 <span class="price">Add $8</span>
-                <button onclick="subItem('Latte')"> - </button>
+                <button onclick="subItem('latte')"> - </button>
             </div>
         </div>
     </div>      
 
     <!-- Latte -->
-    <form name='formDrinks' id="formDrinks" action="/action_payment.php" method="PoSt">
-        <input type="text" id="Frappe" name="Frappe"><br>
-    </form> 
-        
 
     <div class="row">
         <div class="box-container">   
             <div class="box">
-                <img src="./resources/img/frappe.jpg" alt="Frappe" >
+                <img src="./resources/img/frappe.jpg" alt="frappe" >
             </div>
             <div class="text">
                 <h3>Frappe</h3>
@@ -329,10 +304,10 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
-                <button onclick="addItem('Frappe')"> + </button>
-                <span id="Frappe_display">0</span>
+                <button onclick="addItem('frappe')"> + </button>
+                <span id="frappe_display">0</span>
                 <span class="price">Add $8</span>
-                <button onclick="subItem('Frappe')"> - </button>
+                <button onclick="subItem('frappe')"> - </button>
             </div>
         </div>
         <div class="box-container empty"></div>
