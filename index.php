@@ -30,8 +30,7 @@
                 
                 
                 <li id='checkoutbutton' style='display:none' >
-                    <!--<button action="/action_payment.php"><a href="payment.php">Checkout</a></button>-->
-                    <button type="submit" action="/action_payment.php" form="formDrinks" value="Submit">Checkout</button>
+                    <button type="submit" form="formDrinks" value="Submit">Checkout</button>
                 </li>
                 
             </ul>
@@ -67,7 +66,7 @@
 
 
 
-    <form name='formDrinks' id="formDrinks" action="/payment.php" method="PoSt">
+    <form hidden name='formDrinks' id="formDrinks" action="/Cafe/payment.php" method="PoSt">
         <input type="text" id="flatWhite" name="flatWhite"><br>
         <input type="text" id="macchiato" name="macchiato"><br>
         <input type="text" id="cafemocha" name="cafemocha"><br>
@@ -98,13 +97,14 @@
                     <i class="fas fa star"></i>
                     <i class="fas fa star"></i>
                 </div>
+                
+                <button onclick="addItem('flatWhite')"> + </button>
+                <span id="flatWhite_display">0</span>
+                <span class="price">Add $7</span>
+                <button onclick="subItem('flatWhite')"> - </button>
             </div>
-            <button onclick="addItem('flatWhite')"> + </button>
-            <span id="flatWhite_display">0</span>
-            <span class="price">Add $7</span>
-            <button onclick="subItem('flatWhite')"> - </button>
-             </div>
-
+        </div>
+                              
         <!-- Macchiato -->
         
         <div class="box-container">

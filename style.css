@@ -106,26 +106,27 @@ body {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
+  background-color: aquamarine;
 }
 
-.col-25 {
+.box2-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
 
-.col-50 {
+.box1-50 {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
 
-.col-75 {
+.box3-75 {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
 
-.col-25,
-.col-50,
-.col-75 {
+.box-25,
+.box-50,
+.box3-75 {
   padding: 0 16px;
 }
 
@@ -193,4 +194,3 @@ span.price {
     margin-bottom: 20px;
   }
 }
-</style>
