@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>payment page</title>
+<link href="style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -75,12 +76,24 @@
   <div class="box2">
     <div class="container">
       <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:green"><b>$</b></span></p>
+      <!--<p><a href="#">Product 1</a> <span class="price">$</span></p>-->
+      <?php
+        $dictionary = array(
+		"flatWhite" => $_POST['flatWhite'],
+		"coffee" => 5
+        );    
+        $add=0;
+		foreach($dictionary as $drinkName => $val) {
+			echo "$drinkName = $val<br>";
+			$add=$val+$add;
+		  }
+      
+       
+	   echo "$add";
+      
+      echo '<hr>';
+      echo "<p>Total <span class='price' style='color:green'><b>$add</b></span></p>";
+	  ?>
     </div>
   </div>
 </div>

@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+   <h3>Thank you. Your payment done successfully. </h3>
 </body>
 </html>
