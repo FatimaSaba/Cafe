@@ -103,19 +103,19 @@
             "frappe" => $_POST['price_frappe'],
         );      
 
-
-
+        echo $price["macchiato"];
         $add=0;
 
 		foreach($dictionary as $drinkName => $val) {
             $drinkCount = $val;
+            $drinkValue = $drinkCount * $price[$drinkName];
             if(isset( $drinkCount ) && is_numeric($drinkCount)){
-                $add= ($drinkCount) + $add;
+                $add= $drinkValue + $add;
             }else{
-                $drinkCount = 0;
+                $drinkValue = 0;
             }
 
-            echo "$drinkName = $drinkCount <br>";
+            echo "$drinkName = $drinkValue <br>";
 
 		  }
       
