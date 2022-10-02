@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe</title>
-    <link href="style.css" rel="stylesheet">    
-    <link href="style_header.css" rel="stylesheet">    
-    <link href="style_images.css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">    
+    <link href="resources/css/style_header.css" rel="stylesheet">    
+    <link href="resources/css/style_images.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet'>
     
@@ -66,7 +66,7 @@
 
 
 
-    <form hidden name='formDrinks' id="formDrinks" action="/Cafe/payment.php" method="PoSt">
+    <form hidden name='formDrinks' id="formDrinks" action="/Cafe/PaymentPage/payment.php" method="PoSt">
         <input type="text" id="flatWhite" name="flatWhite"><br>
         <input type="text" id="macchiato" name="macchiato"><br>
         <input type="text" id="cafemocha" name="cafemocha"><br>
@@ -77,6 +77,17 @@
         <input type="text" id="coldCoffeeWithIceCream" name="coldCoffeeWithIceCream"><br>
         <input type="text" id="latte" name="latte"><br>
         <input type="text" id="frappe" name="frappe"><br>
+        
+        <input type="text" id="price_flatWhite" value = "7" name="flatWhite"><br>
+        <input type="text" id="price_macchiato" value = "8" name="macchiato"><br>
+        <input type="text" id="price_cafemocha" value = "5" name="cafemocha"><br>
+        <input type="text" id="price_espresso" value = "4" name="espresso"><br>
+        <input type="text" id="price_capppuccino" value = "7" name="capppuccino"><br>
+        <input type="text" id="price_americano" value = "4" name="americano"><br>
+        <input type="text" id="price_irishCoffee" value = "8" name="irishCoffee"><br>
+        <input type="text" id="price_coldCoffeeWithIceCream" value = "$10" name="coldCoffeeWithIceCream"><br>
+        <input type="text" id="price_latte" value = "8" name="latte"><br>
+        <input type="text" id="price_frappe" value = "8" name="frappe"><br>
         
     </form> 
         
@@ -467,8 +478,8 @@
         </div>  
 </section>
 
-    <script src="script.js"></script>
-    <script src="script_items.js"></script>
+    <script src="./Scripts/script.js"></script>
+    <script src="./Scripts/script_items.js"></script>
 
 </body>
 </html>
