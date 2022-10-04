@@ -23,6 +23,11 @@
     <div class='topnav-right'>
         <nav class="nav">
             <ul>
+                <li>
+                   <a><form action="login.php">
+                    <input type="submit" value="login"></form>
+                   </a>
+                </li> 
                 <li><a href="#home">Home</a></li>
                 <li><a href="#Menu">Menu</a></li>
                 <li><a href="#speciality">Speciality</a></li>
@@ -78,16 +83,16 @@
         <input type="text" id="latte" name="latte"><br>
         <input type="text" id="frappe" name="frappe"><br>
         
-        <input type="text" id="price_flatWhite" value = "7" name="flatWhite"><br>
-        <input type="text" id="price_macchiato" value = "8" name="macchiato"><br>
-        <input type="text" id="price_cafemocha" value = "5" name="cafemocha"><br>
-        <input type="text" id="price_espresso" value = "4" name="espresso"><br>
-        <input type="text" id="price_capppuccino" value = "7" name="capppuccino"><br>
-        <input type="text" id="price_americano" value = "4" name="americano"><br>
-        <input type="text" id="price_irishCoffee" value = "8" name="irishCoffee"><br>
-        <input type="text" id="price_coldCoffeeWithIceCream" value = "$10" name="coldCoffeeWithIceCream"><br>
-        <input type="text" id="price_latte" value = "8" name="latte"><br>
-        <input type="text" id="price_frappe" value = "8" name="frappe"><br>
+        <input type="text" id="price_flatWhite" value = "7" name="price_flatWhite"><br>
+        <input type="text" id="price_macchiato" value = "8" name="price_macchiato"><br>
+        <input type="text" id="price_cafemocha" value = "5" name="price_cafemocha"><br>
+        <input type="text" id="price_espresso" value = "4" name="price_espresso"><br>
+        <input type="text" id="price_capppuccino" value = "7" name="price_capppuccino"><br>
+        <input type="text" id="price_americano" value = "4" name="price_americano"><br>
+        <input type="text" id="price_irishCoffee" value = "8" name="price_irishCoffee"><br>
+        <input type="text" id="price_coldCoffeeWithIceCream" value = "10" name="price_coldCoffeeWithIceCream"><br>
+        <input type="text" id="price_latte" value = "8" name="price_latte"><br>
+        <input type="text" id="price_frappe" value = "8" name="price_frappe"><br>
         
     </form> 
         

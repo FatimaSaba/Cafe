@@ -9,12 +9,12 @@
 
 <h2>Checkout Form</h2>
 <p>Please fill this form for further process.</p>
-<div class="row">
+<div class="rowx">
   <div class="col-75">
     <div class="container">
       <form action="../ActionPage/action.php" method="POST">
       
-        <div class="row">
+        <div class="rowx">
           <div class="box1">
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
@@ -26,7 +26,7 @@
             <label for="city"><i class="fa fa-institution"></i> City</label>
             <input type="text" id="city" name="city" placeholder="Lithuania">
 
-            <div class="row">
+            <div class="rowx">
               <div class="box1">
                 <label for="state">State</label>
                 <input type="text" id="state" name="state" placeholder="LT">
@@ -53,14 +53,14 @@
             <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
             <label for="expmonth">Exp Month</label>
             <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
+            <div class="rowx">
               <div class="box1">
                 <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2050">
+                <input type="text" id="expyear" name="expyear" placeholder="3000">
               </div>
               <div class="box1">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="152">
+                <input type="text" id="cvv" name="cvv" placeholder="000">
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
   </div>
   <div class="box2">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i></span></h4>
       <!--<p><a href="#">Product 1</a> <span class="price">$</span></p>-->
       <?php
         $dictionary = array(
@@ -90,6 +90,7 @@
             "latte" => $_POST['latte'],
             "frappe" => $_POST['frappe'],
         );  
+        
         $price = array(
             "flatWhite" => $_POST['price_flatWhite'],
             "macchiato" => $_POST['price_macchiato'],
@@ -102,13 +103,15 @@
             "latte" => $_POST['price_latte'],
             "frappe" => $_POST['price_frappe'],
         );      
-
-        echo $price["macchiato"];
         $add=0;
-
-		foreach($dictionary as $drinkName => $val) {
+		  foreach($dictionary as $drinkName => $val) {
             $drinkCount = $val;
-            $drinkValue = $drinkCount * $price[$drinkName];
+            
+            if($drinkCount == ''){
+              $drinkCount = 0;
+            }
+
+            $drinkValue = $drinkCount * ((int) $price[$drinkName]);
             if(isset( $drinkCount ) && is_numeric($drinkCount)){
                 $add= $drinkValue + $add;
             }else{
@@ -116,18 +119,14 @@
             }
 
             echo "$drinkName = $drinkValue <br>";
-
 		  }
-      
-      echo '<hr>';
-      echo "<p>Total <span class='price' style='color:green'><b>$add</b></span></p>";
-	  ?>
+
+    echo '<hr>';
+    echo "<p>Total <span class='price' style='color:green'><b>" . $add . "</b></span></p>";
+	  
+    ?>
     </div>
   </div>
-</div>
-
-
-</html>
-  
+</div> 
 </body>
 </html>

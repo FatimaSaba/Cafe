@@ -24,7 +24,24 @@ if ($conn->connect_error) {
 
 echo 'works';
 
-var_dump($_POST);
+$insertSql = "INSERT INTO `cardInformation`(`NameOnCard`, `cardNumber`, `expMonth`, `expYear`, `cvv`)" .  
+" VALUES( '" . $_POST['NameonCard'] . "','" . $_POST['cardnumber']  . "','" . $_POST['expmonth']  . "','" . $_POST['expyear']  . "','" . $_POST['cvv'] . "')";
+
+//INSERT INTO `cardInformation`(`NameOnCard`, `cardNumber`, `expMonth`, `expYear`, `cvv`)
+$conn-> query ($insertSql);
+
+$cardId = $conn -> insert_id;
+
+/////
+$usersql = "INSERT INTO `userInformation`(`fullName`, `email`, `address`, `zipcode`, `city`, `cardInformationId`) " .  
+" VALUES( '" . $_POST['fullname'] . "','" . $_POST['email']  . "','" . $_POST['address']  . "','" . $_POST['zipcode']  . "','" . $_POST['city'] . "','" . $cardId . "')";
+var_dump($usersql);
+$conn-> query ($usersql);
+
+
+
+
+//INSERT INTO `userInformation`(`fullName`, `email`, `address`, `zipcode`, `city`, `cardInformationId`) 
 
 /*
 echo $_POST['fullname'];

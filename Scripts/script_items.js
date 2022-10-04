@@ -44,7 +44,7 @@ function unhideOrHideElement(selector, hide){
     }
 }
 
-function changeValueForItem(item,value){
+function changeValueForItem(item, value){
     document.getElementById(item).value = value; 
 }
 
@@ -52,7 +52,7 @@ function addItem (item)
 {
     dict[item] = dict[item] + 1;//work add product 
     document.getElementById(`${item}_display`).innerHTML = dict[item];// display on the screen
-    changeValueForItem(item,dict[item]); //change values
+    changeValueForItem(item, dict[item]); //change values
     unhideOrHideElement("checkoutbutton",checkIfThereIsItems());  // work as hiddencheckout button when there is no products got selected
 }
 function subItem (item){//function for minus value
