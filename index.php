@@ -24,9 +24,25 @@
         <nav class="nav">
             <ul>
                 <li>
-                   <a><form action="login.php">
-                    <input type="submit" value="login"></form>
-                   </a>
+                    <?php
+                    $cookieLoggedIn = "loggedIn";
+
+                    $orderHtml = '
+                    <a href="orders.php"> Orders </a>';
+
+                    $loginHtml = '
+                    <a href="login.php"> Log in</a>';
+
+
+                    if(!isset($_COOKIE[$cookieLoggedIn])) {
+                        echo $loginHtml;
+                    } else {
+                        echo $orderHtml;
+                    }
+
+
+                    ?>
+                </li>
                 </li> 
                 <li><a href="#home">Home</a></li>
                 <li><a href="#Menu">Menu</a></li>
