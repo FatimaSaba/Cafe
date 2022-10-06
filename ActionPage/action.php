@@ -32,7 +32,7 @@ $conn-> query ($insertSql);
 
 $cardId = $conn -> insert_id;
 
-/////
+
 $usersql = "INSERT INTO `userInformation`(`fullName`, `email`, `address`, `zipcode`, `city`, `cardInformationId`) " .  
 " VALUES( '" . $_POST['fullname'] . "','" . $_POST['email']  . "','" . $_POST['address']  . "','" . $_POST['zipcode']  . "','" . $_POST['city'] . "','" . $cardId . "')";
 var_dump($usersql);
