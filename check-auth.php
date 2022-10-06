@@ -23,6 +23,4 @@ else{
     header('Location: login.php');
 }
 
-var_dump($result);
-var_dump($sql);
 ?>
